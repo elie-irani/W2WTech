@@ -9,13 +9,14 @@ require("dotenv").config();
 
 
 //DB connection
+/*
 mongoose.connect(process.env.mongoDB_URL, {useNewUrlParser: true, useUnifiedTopology: true} );
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => {
   console.log('Connected to MongoDB');
-});
+});*/
 
 //for directory
 var app = express();
