@@ -1,0 +1,41 @@
+<header>
+    <a href="#">
+        <div id="mainlogoname">
+            <img src="../images/grape/icons8-grape-64.png" alt="Logo">
+        </div>
+    </a>
+
+    <ul id="navigation">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PRODUCTS</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#" onclick="openForm()">CONTACT US</a></li>
+    </ul>
+
+    <div id="popUp">
+        <div id="formCard">
+            <img src="../images/bendy-mail-with-document.png" style="width: 200px; margin-left: 20px;" alt="mail illustration">
+            <form action="">
+                <img src="../images/icons8-close-24.png" alt="close button image" id="closeIcon" onclick="closeForm()">
+                <h2 style="margin-bottom: 0px;">Get in touch</h2>
+                <div id="inputDiv">
+                    <h5 style="grid-area: requ;">*Required</h5>
+                    <input type="text" placeholder="Full name*" style="grid-area: name;" class="inputs" required>
+                    <input type="email" placeholder="Email*" style="grid-area: email;" class="inputs" required>
+                    <input type="text" placeholder="Subject*" style="grid-area: subject;" class="inputs" required>
+                    <textarea type="text" placeholder="Message*" style="grid-area: message; resize: none;" rows="10" class="inputs" required></textarea>
+                    <button class="button">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+<script>
+    function openForm() {
+      document.getElementById("popUp").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("popUp").style.display = "none";
+    }
+</script>
