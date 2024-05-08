@@ -24,6 +24,10 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/views'));
 
 app.use('/', indexRouter);
+app.use('/pomace', indexRouter);
+app.use('/brewersgold', indexRouter);
+app.use('/services', indexRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

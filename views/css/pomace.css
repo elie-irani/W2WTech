@@ -1,0 +1,12 @@
+html{
+    overflow-y: scroll;
+}
+body {
+    background-color: #FFEFCD;
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}

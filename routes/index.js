@@ -6,12 +6,12 @@ router.get('/', function(req, res, next) {
   res.render('home');
 });
 /* GET pomace page. */
-router.get('/pomACE', function(req, res, next) {
-  res.render('pomACE');
+router.get('/pomace', function(req, res, next) {
+  res.render('pomace');
 });
 /* GET yeast page. */
-router.get('/yeast', function(req, res, next) {
-  res.render('yeast');
+router.get('/brewersgold', function(req, res, next) {
+  res.render('brewersgold');
 });
 /* GET services page. */
 router.get('/services', function(req, res, next) {
