@@ -1,3 +1,6 @@
+html{
+    overflow-y: scroll;
+}
 body {
     background-color: #D9D9D9;
     font-family: "Libre Franklin", sans-serif;
@@ -17,4 +20,30 @@ body {
     height: 100%;
     object-fit: cover;
     width: 100%;
+}
+#hero-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+#hero-content a{
+    padding: 20px;
+    background-color: rgba(255, 42, 42, 0.8);
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .142857em;
+}
+#hero-content a:hover{
+    cursor: pointer;
+    background-color: rgba(255, 42, 42, 1);
+
 }

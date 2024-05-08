@@ -32,6 +32,7 @@ header a {
     right: 0px;
     bottom: 0px;
     left: 0px;
+    z-index: 100;
 }
 #formCard{
     color: rgb(82, 82, 82);
