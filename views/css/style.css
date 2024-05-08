@@ -6,3 +6,15 @@ body {
     font-style: normal;
     margin: 0px;
 }
+.hero-banner{
+    background-color: #fff;
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+#on-web{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
