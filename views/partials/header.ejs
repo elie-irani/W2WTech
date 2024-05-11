@@ -6,10 +6,16 @@
     </a>
 
     <ul id="navigation">
-        <li><a href="/">HOME</a></li>
-        <li><a href="/pomace">PRODUCTS</a></li>
-        <li><a href="/services">SERVICES</a></li>
-        <li><a href="#" onclick="openForm()">CONTACT US</a></li>
+        <div><li><a class="nav" href="/">HOME</a></li></div>
+        <div id="dropdown-container">
+            <li><p id="products-nav" onClick="openNav()" >PRODUCTS</p></li>
+            <div id="dropdown-nav">
+                <a class="list-elements" id="pomace-nav" href="/pomace">Pomace Plus </a>
+                <a class="list-elements" id="brewers-nav" href="/brewers">Brewer's Gold</a>
+            </div>
+        </div>
+        <div><li><a class="nav" href="/services">SERVICES</a></li></div>
+        <div><li><a class="nav" href="#" onclick="openForm()">CONTACT US</a></li></div>
     </ul>
 
     <!-- Contact POP -->
@@ -32,11 +38,35 @@
     </div>
 </header>
 <script>
+
+    function sendMail(){
+
+        const email = {
+            from: 'sender@example.com',
+            to: 'recipient@example.com',
+            subject: 'Test email',
+            text: 'This is a test email sent from the browser'
+        }
+
+        smtp.sendMail(email)
+        .then(info => console.log(info))
+        .catch(err => console.error(err))
+
+    }
+
     function openForm() {
-      document.getElementById("popUp").style.display = "block";
+        document.getElementById("popUp").style.display = "block";
     }
     
     function closeForm() {
-      document.getElementById("popUp").style.display = "none";
+        document.getElementById("popUp").style.display = "none";
+    }
+
+    function openNav(){
+        document.getElementById("dropdown-nav").style.display = "flex";
+    }
+
+    function closeNav(){
+        document.getElementById("dropdown-nav").style.display = "none";
     }
 </script>

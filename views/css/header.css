@@ -11,7 +11,7 @@ header a {
     text-decoration: none; 
     color: black;
 }
-#navigation a:hover{
+.nav:hover{
     border-bottom: 2px solid #967b2e;
 }
 #navigation{
@@ -19,9 +19,38 @@ header a {
     list-style: none;
     display: flex;
     justify-content: start;
-    align-items: end;
+    align-items: center;
     gap: 30px;
     margin: 0px;
+}
+#products-nav:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #967b2e;
+}
+#dropdown-nav{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: white;
+    position: absolute;
+    z-index: 99;
+}
+.list-elements{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.list-elements a{
+    width: 100%;
+    padding: 10px;
+}
+#brewers-nav:hover{
+    background-color: rgba(205, 182, 88, 0.5);
+}
+#pomace-nav:hover{
+    background-color: rgba(157, 67, 157, 0.5);
 }
 #popUp{
     background: rgba(0, 0, 0, 0.6);

@@ -25,7 +25,7 @@ app.use(express.static(__dirname + '/views'));
 
 app.use('/', indexRouter);
 app.use('/pomace', indexRouter);
-app.use('/brewersgold', indexRouter);
+app.use('/brewers', indexRouter);
 app.use('/services', indexRouter);
 
 

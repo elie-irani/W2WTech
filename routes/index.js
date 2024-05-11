@@ -10,8 +10,8 @@ router.get('/pomace', function(req, res, next) {
   res.render('pomace');
 });
 /* GET yeast page. */
-router.get('/brewersgold', function(req, res, next) {
-  res.render('brewersgold');
+router.get('/brewers', function(req, res, next) {
+  res.render('brewers');
 });
 /* GET services page. */
 router.get('/services', function(req, res, next) {
