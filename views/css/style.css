@@ -71,9 +71,12 @@ body {
     background-color: #8F9779;
     width: 100%;
     height: 800px;
+    display: grid;
+    grid-template-areas: 'diff-title diff-title diff-title'
+                        'premium student novel';
 }
 #sponsor-title { 
-    grid-area: title;
+    grid-area: spons-title;
     text-align: center;
 }
 #lau-sponsor { grid-area: lau; }
@@ -82,7 +85,7 @@ body {
     background-color: #FFEFCD;
     width: 100%;
     display: grid;
-    grid-template-areas: 'title  title'
+    grid-template-areas: 'spons-title  spons-title'
                         'lau vip';
     grid-column-gap: 150px;
     align-items: center;
