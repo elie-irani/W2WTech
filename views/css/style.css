@@ -72,10 +72,21 @@ body {
     width: 100%;
     height: 800px;
 }
-#sponsors{
+#sponsor-title { 
+    grid-area: title;
+    text-align: center;
+}
+#lau-sponsor { grid-area: lau; }
+#vip-sponsor { grid-area: vip; }
+#sponsor-section{
     background-color: #FFEFCD;
     width: 100%;
-    height: 200px;
+    display: grid;
+    grid-template-areas: 'title  title'
+                        'lau vip';
+    grid-column-gap: 150px;
+    align-items: center;
+    justify-content: center;
 }
 .svg-wrapper{
     display:block;
